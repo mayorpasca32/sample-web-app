@@ -31,11 +31,26 @@ ingress:
   tls: []
 resources:
   limits:
-    cpu: 100m
-    memory: 128Mi
+    cpu: 200m
+    memory: 256Mi
   requests:
+<<<<<<< HEAD
     cpu: 100m
     memory: 128Mi
+=======
+    cpu: 200m
+    memory: 256Mi
+
+# livenessProbe:
+#   httpGet:
+#     path: /
+#     port: http
+# readinessProbe:
+#   httpGet:
+#     path: /
+#     port: http
+
+>>>>>>> 5e18489fa5db8ca210a836080bbbc96d938ab8c6
 autoscaling:
   enabled: true
   minReplicas: 2
